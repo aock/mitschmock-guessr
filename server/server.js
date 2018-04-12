@@ -35,6 +35,7 @@ app.use(function(err, req, res, next) {
 });
 
 var port = process.env.NODE_ENV === 'production' ? 80 : 4000;
-var server = app.listen(port, function() {
-    console.log('Mitschmock Server listening on port ' + port);
+var address = config.host;
+var server = app.listen(port, address, function() {
+    console.log('Mitschmock Server listening on ' + address + ':' + port);
 });

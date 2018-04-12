@@ -1,5 +1,6 @@
 {
     "databaseUri": "mongodb://localhost:27017/mitschmock-users",
     "apiUrl": "http://localhost:4000",
+    "host": "0.0.0.0",
     "secret": "A SECRET"
 }
